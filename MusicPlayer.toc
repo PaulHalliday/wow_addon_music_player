@@ -1,0 +1,7 @@
+## Interface: 11303
+## Title: MusicPlayer
+## Notes: Play sounds and music inside of the game.
+## Author: Paul Halliday
+## Version: 0.0.1
+
+MusicPlayer.lua
