@@ -42,6 +42,8 @@ SLASH_STOPSOUND1 = "/stopsound"
 local customSoundId;
 
 local function playTrack(track)
+  print(track.description)
+
   if(track.type == soundType.GAME_MUSIC) then
       PlayMusic(track.sound)
 
