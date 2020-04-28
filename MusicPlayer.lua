@@ -84,8 +84,5 @@ local function playSoundHandler(trackId)
   end
 end
 
-
-
-
 SlashCmdList["SOUND"] = playSoundHandler;
 SlashCmdList["STOPSOUND"] = stopSoundHandler;
