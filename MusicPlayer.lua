@@ -41,6 +41,16 @@ SLASH_STOPSOUND1 = "/stopsound"
 
 local customSoundId;
 
+local function stopSoundHandler()
+    StopMusic()
+  
+    if(customSoundId ~= nil) then
+        StopSound(customSoundId)
+        customSoundId = nil
+    end
+  end
+
+
 local function playTrack(track)
   print(track.description)
 
@@ -74,14 +84,7 @@ local function playSoundHandler(trackId)
   end
 end
 
-local function stopSoundHandler()
-  StopMusic()
 
-  if(customSoundId ~= nil) then
-      StopSound(customSoundId)
-      customSoundId = nil
-  end
-end
 
 
 SlashCmdList["SOUND"] = playSoundHandler;
